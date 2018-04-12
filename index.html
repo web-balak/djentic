@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>App</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|Dancing+Script|Gaegu|Poor+Story" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|Dancing+Script|Gaegu" rel="stylesheet">
+</head>
+
+<body>
+    <div class="conteiner">
+        <nav class=fixed>
+            <div class="toggle">
+                <a id="main_menu" href="#">&#9776;</a>
+            </div>
+            <div class="logo">
+                <h2>Джентик Shop</h2>
+            </div>
+            <ul id="my_nav" class="top_nav">
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#goods">Товар</a></li>
+                <li><a href="#contacts">Связь</a></li>
+            </ul>
+        </nav>
+        <div id="about">
+            <div class="row">
+                <div class="photo">
+                    <!--                   <div class="img"></div>-->
+                    <img src="img/alex_main.png" alt="Alessandro Michele photo" style="width:320px; height:438px">
+                </div>
+                <div class="description">
+                    <h3>Привет человек !</h3>
+                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="brands">
+            <ul>
+                <li id="li1"></li>
+                <li id="li2"></li>
+                <li id="li3"></li>
+            </ul>
+
+        </div>
+        <div id="goods" class="goods">
+            <div class="row">
+
+                <div class="block">
+                    <img src="img/goods/111.png" alt="картинка">
+                    <p class="descr">Women's Parker Brown Watch MK568</p>
+                    <p class="price">Цена: <b class="price-uah">220$</b></p>
+                </div>
+                <div class="block">
+                    <img src="img/goods/111.png" alt="картинка">
+                    <p class="descr">Women's Parker Brown Watch MK568</p>
+                    <p class="price">Цена: <b class="price-uah">220$</b></p>
+                </div>
+                <div class="block">
+                    <img src="img/goods/111.png" alt="картинка">
+                    <p class="descr">Women's Parker Brown Watch MK568</p>
+                    <p class="price">Цена: <b class="price-uah">220$</b></p>
+                </div>
+                <div class="block">
+                    <img src="img/goods/111.png" alt="картинка">
+                    <p class="descr">Women's Parker Brown Watch MK568</p>
+                    <p class="price">Цена: <b class="price-uah">220$</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="brands second">
+
+        </div>
+        <div id="contacts" class="contacts">
+            <div class="row">
+                <div class="callbackform">
+                    <form action="callback-form.php" method="post" class="form">
+                        <div class="form-text">
+                            <h3>Введите свои данные и мы с вами свяжемся:</h3>
+                        </div>
+
+                        <p><label for="">Имя: </label></p> <input name="name" type="text" value="" required>
+                        <p><label for="">Почта: </label></p> <input name="email" type="email" value="" required>
+                        <p><label for="">Номер телефона: </label></p> <input name="number" value="+380" type="text" required>
+                        <p><label for="">Сообщение: </label></p><textarea placeholder="Ваше сообщение..." name="message" id="" rows="8" required></textarea>
+                        <p class="button"><button type="submit">Отправить</button></p>
+
+
+                    </form>
+
+                </div>
+
+                <div class="map">
+                    <div class="wrap-map">
+                        <!--                        <h4>Мы находимся здесь: </h4>-->
+                        <div id="map"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <footer>
+            <ul>
+                <li><a class="faseb" href="#"><i class="fa fa-facebook" style="font-size:24px"></i></a></li>
+                <li><a class="insta" href="#"><i class="fa fa-instagram" style="font-size:24px"></i></a></li>
+            </ul>
+            <p>Киев 2018</p>
+        </footer>
+
+
+        <script src="map.js"></script>
+        <script src="main-menu.js"></script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDP0U0Ebk4nmjAVLLGP4Fmw0gY9aZlAfM4&callback=myMap"></script>
+        <script src="index.js" defer></script>
+
+
+</body>
+
+</html>
